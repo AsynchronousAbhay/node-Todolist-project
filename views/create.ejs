@@ -1,0 +1,30 @@
+<!--  -->
+<%- include('header')%>
+
+<!--  -->
+<%- include('nav')%>
+
+
+<form class="container w-25 m-auto" action="/add" method="post">
+
+    <h1><span class="text-success">Create</span> task...</h1>
+    <input 
+        class="form-control w-100 my-3"
+        type="text"
+        placeholder="title"
+        name="title"
+    >
+    <textarea 
+        class="form-control w-100 my-3" 
+        placeholder="desc"
+        name="desc"
+        cols="30"
+        rows="5"
+    ></textarea>
+    <button class="btn btn-success w-100 mb-1">Add task</button><br>
+    <small class="text-danger">This page is to add task in your active list...</small> 
+</form>
+
+
+<!--  -->
+<%-include('footer')%>
